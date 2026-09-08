@@ -56,7 +56,7 @@ body {
     font-family:"Playpen Sans", cursive;
 }
 
-.nav-container{
+.nav-container {
     align-items:center;
     display:flex;
     flex-direction: column;
@@ -65,6 +65,7 @@ body {
     align-self: center;
     align-content: center;
 }
+
 
 .logo-text {
     width: 150px;
