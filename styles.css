@@ -817,7 +817,7 @@ margin:6px 0;
 
 .service-title {
     font-weight:700;
-    color rgb(78, 123, 141);
+    color: rgb(78, 123, 141);
     font-size: 28px;
     font-family: "Saira", sans-serif;
 }
@@ -964,6 +964,11 @@ margin:6px 0;
     margin-bottom: 150px !important;
 }
 
+.our-blog-section {
+    margin-top: 100px !important;
+    margin-bottom: 150px !important;
+}
+
 .ourblog-header-text {
     color: rgb(78, 123, 141);
     font-weight:600;
@@ -1009,17 +1014,26 @@ margin:6px 0;
 }
 
 .dp-image {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     position: absolute;
     bottom: 168px;
     left: 10px;
+    object-fit: cover;
 }
 
 .blog-content p {
     font-family:"Playpen Sans", cursive;
     font-size: 18px;
+}
+
+.blog-title a {
+    text-decoration: none;
+    color: rgb(78, 123, 141);
+    font-family: "Saira", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
 }
 
 .blog-footer {
@@ -1175,12 +1189,16 @@ margin:6px 0;
 .footer-section {
     background-color: black;
     color: white;
-    padding-left:100px;
-    padding-right:100px;
+    margin-top: 150px !important;
+}
+
+.footer-section .container {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+    padding-bottom: 30px;
 }
 
 .footer-container1 {
-    margin-right: 50px;
+    margin-right: 150px !important;
 }
 
 .footer-header {
@@ -1190,9 +1208,13 @@ margin:6px 0;
 .footer-header a {
     font-family: "Saira", sans-serif;
     color: rgb(15, 129, 15) !important;
-    font-size: 40px;
+    font-size: 30px;
     font-weight:bolder;
     text-decoration: none;
+}
+
+.footer-text1 {
+    font-size: 16px;
 }
 
 .footer-span {
@@ -1239,6 +1261,7 @@ margin:6px 0;
 .footer-text2 {
     border-bottom: 1px solid rgb(78, 123, 141);
     padding-bottom: 20px;
+    font-size: 16px;
 }
 .footer-text2 i {
    color: rgb(15, 129, 15) !important;
@@ -1275,6 +1298,7 @@ hr {
 
 .our-team-section {
     margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
 
 .our-team-header-text {
@@ -1293,13 +1317,29 @@ hr {
 .team-member {
     background-color: rgb(238, 238, 238);
     border-radius: 10px;
-    padding: 20px;
+    padding-bottom: 30px !important;
     text-align: center;
-    width: 350px;
+    width: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.5s ease;
 }
+
+.team-member:hover {
+    transform: translateY(-10px);
+    transition: 0.5s ease-in-out;
+}
+
+.team-member:hover h5 {
+    color: blue;
+}
+
+.team-member:hover .team-member-image img {
+    transform: scale(1.0) 0.5s ease;
+    border: 5px solid rgb(128, 211, 128);
+    overflow: hidden;
+} 
 
 .team-member-image {
     background-color: white;
@@ -1315,18 +1355,19 @@ hr {
     object-fit:cover;
     border-radius:50%;
     border:10px solid rgb(128, 211, 128);
+    transition: transform 0.8s ease, border-radius 0.8s ease;
 }
 
 .team-member h5 {
     font-family: "Saira", sans-serif;
     color: rgb(78, 123, 141);
     font-weight: 500;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .team-member p {
-    color: black;
-    font-size: 16px;
+    color: rgb(78, 123, 141);
+    font-size: 12px;
 }
 
 .team-member-icons {
@@ -1339,3 +1380,19 @@ hr {
     color: white;
     font-size: 20px;
 }
+
+.team-member-icon-div {
+    background-color: rgba(15, 129, 15, 0.822);
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.team-member-icon-div:hover {
+    transform: translateY(-5px);
+}
+
+
