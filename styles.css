@@ -1395,4 +1395,10 @@ hr {
     transform: translateY(-5px);
 }
 
-
+.educational-subheader-text {
+    font-family: "Saira", sans-serif;
+    color: rgb(78, 123, 141);
+    font-size: 18px;
+    text-align: center;
+    line-height: 2.0;
+}
